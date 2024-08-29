@@ -7,44 +7,82 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.box {
-  text-align: center;
-  background-color: darkblue;
-
-  width: 30rem;
-  height: 8rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 20px;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-#task {
-  position: relative;
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+h1 {
+  margin-top: 0;
 }
-#task form {
-  box-sizing: border-box;
+
+.task-input {
+  display: flex;
+  margin-bottom: 20px;
 }
-#task form input {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  border-color: aquamarine;
-  margin-right: 2rem;
-  text-align: center;
-  height: 3rem;
+
+#input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
-#button {
-  font-size: 20px;
-  border-radius: 5px;
-  height: 3rem;
-  background-color: #d0d066;
+
+#addButton {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
   cursor: pointer;
-  height: 3rem;
-  font-weight: bold;
+}
+
+#addButton:hover {
+  background-color: #218838;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+button.delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.delete:hover {
+  background-color: #c82333;
 }
